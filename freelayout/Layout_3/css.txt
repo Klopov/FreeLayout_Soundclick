@@ -1,0 +1,633 @@
+/*  general  */
+	body {
+        background-color: #ffffff;
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/background.png) !important;
+		background-repeat:repeat;
+        margin:0px;
+        overflow-x: hidden;
+    }
+	body,div,tr,td,select,textarea,input,option {font-family:Verdana,Arial; font-size:12px;}
+	a, a:link, a:visited {
+        color: #7E7E7E; 
+        text-decoration: underline;    
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+	a:hover {
+        color: #C26500;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+	.pageFooter {clear:both; color:gray; padding:30px 0px 50px 20px; text-align: center;}
+	.infoBox {width:650px; margin:50px auto; border:silver solid 1px; padding:30px; font-size:14px;}  /* hardly used, its for error messages to user */
+		.infoBox .quotes {margin:20px; font-styl&#101;:italic; padding:10px; background:#ECECEC;}
+	/*  for custom header, use like this: .customCSSHeader {display:block; background: url(LINK_TO_YOUR_IMAGE) center no-repeat; height: INSERT_HEIGHT_IN_PIXELS_HERE;  }   */
+	.navBreadcrumbs a{color: white !important;}
+	.navBreadcrumbs a:hover{color: #FFE900 !important;}
+	.customCSSHeader {display:none;}
+    
+  
+	/*  main page: VIP embedded player (only this embedded player or the standard song box is used. Never both together) */
+	.embeddedPlayer {
+	width: 618px;
+	height: 150px;
+    margin-left: 2px;
+    margin-top: 594px;
+	position: absolute;
+    top: 0;
+	z-index: 30;
+    }
+
+
+
+    .completeNavHeader {z-index: 999;  position:fixed; background-color:transparent;-webkit-transition: all 1s ease-in-out;-moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out; transition: all 1s ease-in-out; top:4px; right:-950px; margin: 0 auto 5px; width: 990px; } 
+    .completeNavHeader:hover { position:fixed; background-color:transparent; top:4px; right:7px; margin: 0 auto 5px; width: 990px; } 
+    .navbar {width:990px;} .navbarTop{z-index: 999; width:990px; background-color:#000000; border: 1px solid #333333; -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 5px #000; -webkit-box-shadow: 0 0 5px#000; box-shadow: 0 0 5px #000;  } 
+    .navbarBottom {display: none !important;}
+
+
+    
+    #moya_menu {
+		background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/layout.png); 
+        background-repeat: no-repeat;
+        height: 1729px;
+        margin-left: -555px;
+        position: absolute;
+        top: 0;
+        width: 2000px;
+    }
+
+    .news {
+        color: #000000;
+        left: 50%;
+        height: 160px !important;
+        margin-left: 200px;
+        margin-top: 589px;
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        width: 272px;
+        z-index: 30;
+        -webkit-transition: .4s all ease-in-out;
+        -moz-transition: .4s all ease-in-out;
+        -o-transition: .4s all ease-in-out;
+        transition: .4s all ease-in-out;  
+    }  
+
+    .news marquee{
+        height: 160px !important;    
+        text-align: center;
+    }  
+    
+    .news:hover {
+        opacity: 1;
+         -webkit-transition: .4s all ease-in-out;
+        -moz-transition: .4s all ease-in-out;
+        -o-transition: .4s all ease-in-out;
+        transition: .4s all ease-in-out;       
+    }    
+    
+    .PayPal { 
+        color: #727272;
+        font-size: 13px;
+        left: 50%;
+        margin-left: -415px;
+        margin-top: 1400px;
+        position: absolute;
+        top: 0;
+        text-align: center !important;
+        z-index: 30;
+    }
+    
+    .PayPal select{ 
+        font-size: 10px !important;
+        height: 20px;
+        width: 200px;
+    }
+    
+
+    
+    .PayPal #BuyNow{
+        display: block;
+        height: 51px;
+        opacity: 0;
+        margin-left: -47px;
+        margin-top: 228px;
+        position: absolute;
+        top: 0px;
+        width: 295px;
+        -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+        z-index: 30;
+    }    
+    .PayPal #BuyNow:hover{
+        opacity: 1;
+        -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+    }    
+     
+	 .PayPal2 { 
+        color: #727272;
+        font-size: 13px;
+        left: 50%;
+        margin-left: -98px;
+        margin-top: 1400px;
+        position: absolute;
+        top: 0;
+        text-align: center !important;
+        z-index: 30;
+    }
+    
+    .PayPal2 select{ 
+        font-size: 10px !important;
+        height: 20px;
+        width: 200px;
+    }
+    
+
+    
+    .PayPal2 #BuyNow2{
+        display: block;
+        height: 51px;
+        opacity: 0;
+        margin-left: -40px;
+        margin-top: 228px;
+        position: absolute;
+        top: 0px;
+        width: 295px;
+        -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+        z-index: 30;
+    }    
+    .PayPal2 #BuyNow2:hover{
+        opacity: 1;
+        -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+    }
+	
+	.PayPal3{ 
+        color: #727272;
+        font-size: 13px;
+        left: 50%;
+        margin-left: 228px;
+        margin-top: 1400px;
+        position: absolute;
+        top: 0;
+        text-align: center !important;
+        z-index: 30;
+    }
+    
+    .PayPal3 select{ 
+        font-size: 10px !important;
+        height: 20px;
+        width: 200px;
+    }
+    
+
+    
+    .PayPal3 #BuyNow3{
+        display: block;
+        height: 51px;
+        opacity: 0;
+        margin-left: -42px;
+        margin-top: 228px;
+        position: absolute;
+        top: 0px;
+        width: 295px;
+        -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+        z-index: 30;
+    }    
+    .PayPal3 #BuyNow3:hover{
+        opacity: 1;
+        -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+    }
+    
+	#gm {       
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/gm1.png);     
+        background-repeat: no-repeat; 
+        display: block; 
+        height: 45px;
+        left: 50%;
+        margin-left: -470px;
+        margin-top: 483px;
+        opacity: 0;
+        position:absolute;
+        top: 0;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        width: 45px;
+        z-index: 30;
+    }
+    
+	#gm:hover {    
+        opacity:1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }   
+
+	#gm2{       
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/gm2.png);     
+        background-repeat: no-repeat; 
+        display: block; 
+        height: 45px;
+        left: 50%;
+        margin-left: 445px;
+        margin-top: 483px;
+        opacity: 0;
+        position:absolute;
+        top: 0;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        width: 45px;
+        z-index: 30;
+    }
+    
+	#gm2:hover {    
+        opacity:1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    } 	
+
+	#tw{       
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/tw1.png);     
+        background-repeat: no-repeat; 
+        display: block; 
+        height: 45px;
+        left: 50%;
+        margin-left: -415px;
+        margin-top: 483px;
+        opacity: 0;
+        position:absolute;
+        top: 0;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        width: 45px;
+        z-index: 30;
+    }
+    
+	#tw:hover {      
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    } 
+    
+	#tw2 {       
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/tw2.png);     
+        background-repeat: no-repeat; 
+        display: block; 
+        height: 45px;
+        left: 50%;
+        margin-left: 390px;
+        margin-top: 483px;
+        opacity: 0;
+        position:absolute;
+        top: 0;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        width: 45px;
+        z-index: 30;
+    }
+    
+	#tw2:hover {      
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    } 
+	
+	#fb {       
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/fb1.png);     
+        background-repeat: no-repeat; 
+        display: block; 
+        height: 45px;
+        left: 50%;
+        margin-left:-360px;
+        margin-top: 483px;
+        opacity: 0;
+        position:absolute;
+        top: 0;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        width:45px;
+        z-index: 30;
+    }
+    
+	#fb:hover {       
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }   
+	
+		
+	#fb2 {       
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/fb2.png);     
+        background-repeat: no-repeat; 
+        display: block; 
+        height: 45px;
+        left: 50%;
+        margin-left:335px;
+        margin-top: 483px;
+        opacity: 0;
+        position:absolute;
+        top: 0;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        width:45px;
+        z-index: 30;
+    }
+    
+	#fb2:hover {       
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+	
+	#copyright1 {    
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/banner1.png); 
+        background-position: 0px 0;
+        display: block; 
+        height: 59px; 
+        margin-left: 612px;
+        margin-top: 828px;
+        opacity: 0;
+        top: 0;
+        position:absolute; 
+        width: 295px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        z-index: 30;
+    }
+    
+
+	#copyright1:hover {     
+        margin-top: 831px;
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }     
+    
+	#copyright2 {    
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/banner2.png); 
+        background-position: 0px 0;
+        display: block; 
+        height: 58px; 
+        margin-left: 612px;
+        margin-top: 893px;
+        opacity: 0;
+        top: 0;
+        position:absolute; 
+        width: 295px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        z-index: 30;
+    }
+    
+
+	#copyright2:hover {     
+        margin-top: 891px;
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }     
+    
+.mfs_player {
+        position: absolute; 
+        height: 409px; 
+        left: 50%;
+        margin-left:-451px;
+        margin-top: 767px;
+        top: 0;
+        width: 624px; 
+        z-index: 30;
+    }
+	#leasing1{
+		height:125px;
+		margin-left:28px;
+		margin-top: 1340px;
+		overflow-y: auto;
+		position:absolute;
+		top:0;
+		width:200px;
+	}
+	#leasing2{
+		height:125px;
+		margin-left:338px;
+		margin-top: 1340px;
+		overflow-y: auto;
+		position:absolute;
+		top:0;
+		width:200px;
+	}
+	#leasing3{
+		height:125px;
+		margin-left:665px;
+		margin-top: 1340px;
+		overflow-y: auto;
+		position:absolute;
+		top:0;
+		width:200px;
+	}
+
+/*  main containers  */
+	.mainTable {background-color: transparent; border: 0px;  width: 900px; margin-left: auto; margin-right: auto;}
+	.mainContent {background-color: transparent; width: 924px; margin-left: auto; margin-right: auto;}
+	.sideAd {width:300px; height:260px; margin:3px 2px 15px 10px; float:right; text-align:center; overflow:visible;}
+	.sideAdSky {width:160px; height:610px; margin:3px 0px 15px 0px; float:right; text-align:center; overflow:visible; border-left:#999999 solid 1px;}
+
+/*  left navigation  */
+	.navigation {background:inherit; width:937px; height: 1529px; float:left; overflow:hidden; margin:-50px -50px -20px 0px; display:block; z-index:30;}
+		.navigation a:link, .navigation a:visited {color:inherit;}
+		.navigation a:hover {color:inherit;}
+	.navigationDivider {height:6px; margin-bottom:6px;}
+
+/*  general elements  */
+	.headline {background:transparent; color:transparent; font-size:1px; font-weight:bold;  border-top:#333333 solid 1px; padding:3px 0px 3px 6px; text-align:right; margin-left: 300px; display: none;}
+	.headlineBig {font-size:22px; font-weight:normal;}
+	.headlineSuppl {float:right; margin:10px 5px 0px 0px; color:#transparent; font-size:1px; font-weight:normal;} /* for text/links on the right side of main headline (e.g. song count on main page) */
+		.headlineSuppl a:link, .headlineSuppl a:visited {color:#transparent; text-decoration:none;}
+		.headlineSuppl a:hover {color:transparent; text-decoration:underline;}
+	.pageturner {text-align:right; padding:10px; font-size:13px; font-weight:normal; color: #D7D7D7; background:transparent; border: 0;
+            -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }  /* pages menu (previous, next..), e.g. on music page, message board */
+		.pageturner .nonactive {color:#999999;}
+		.pageturner a:hover {color: white !important; text-decoration:underline;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;}
+		.pageturner a:link, .pageturner a:visited {color: #A4A4A4; text-decoration:none;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;}
+	.listedPicsBox {background:white; color:black; width:114px; height:160px; overflow:hidden; padding:2px 1px 4px 1px; margin:0px 4px 10px 4px; border:solid #cccccc 1px; float:left; font-size:11px; text-align:center;}
+		.listedPics {width:110px; height:125px; background-position: center center; background-repeat: no-repeat; margin:2px 0px 4px 0px; overflow:hidden}
+	.breaker {height:1px; line-height:1px; clear:both}
+
+/*  general color and font assets */
+	.color_supplemental {color:silver;} 	/* used e.g. for song pages comments count */
+	.alternateBG0 {background:#ffffff;}		/* used as background colors for comments */
+	.alternateBG1 {background:#f0f0f0;}		/* alternate color */
+
+/*  main page (the default entry page) */
+	.mainContent .contHeadline	{clear:left; font-family:Tahoma,Trebuchet MS,Verdana,Arial; font-size:14px; color:#E3E3E3; padding:12px 0px 2px 20px;}
+	.mainContent .contText {clear:left; font-size:13px; padding-left:15px;}
+	.mainContent .contInterview {clear:left; font-size:13px; padding-left:35px;}
+	.mainContent .newsBox {clear:both; margin:0px 20px 20px 20px; padding:20px; background:#ECECEC; border:#cccccc solid 2px;}
+	
+
+
+    .statsNumbers {
+        color: #FAFAFA;
+        display: block;
+        font-size: 11px !important;
+        line-height: 15px !important;
+        margin-left: 721px;
+        margin-top: 94px;
+        opacity: .4;
+        padding: 0px !important;
+        position: absolute;
+        width: 155px !important;
+        z-index: 30;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+    .statsNumbers:hover {
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }             
+            
+/*  music page  */
+.songsBox {
+ border-bottom:#d7d7d7;dashed 0px;
+ width:40px;
+ float:left;
+ padding-bottom:2px;
+ margin-bottom:10px;
+}
+.songsBox {
+    height:170px;
+    overflow:hidden;
+	background: url(https://dl.dropboxusercontent.com/u/53239925/design/2styl/song.png);
+	background-repeat: no-repeat;
+	background-position:0px 15px;
+
+-webkit-transition: .5s all ease-in-out;-moz-transition: .5s all ease-in-out;
+-o-transition: .5s all ease-in-out;transition: .5s all ease-in-out;
+}
+
+.songsBox a:hover {text-decoration:underline; color:#C26500;-webkit-transition: .9s all ease-in-out;-moz-transition: .9s all ease-in-out;
+-o-transition: .9s all ease-in-out;transition: .9s all ease-in-out;}
+
+
+a.songtitle:link, a.songtitle:visited {color:#A4A4A4; text-decoration:none; font-size:13px; font-weight:bold;-webkit-transition: .9s all ease-in-out;-moz-transition: .9s all ease-in-out;
+-o-transition: .9s all ease-in-out;transition: .9s all ease-in-out;}
+a.songtitle:hover {color: #C26500; margin-left:10px;-webkit-transition: .9s all ease-in-out;-moz-transition: .9s all ease-in-out;
+-o-transition: .9s all ease-in-out;transition: .9s all ease-in-out; }
+
+
+.songsBox a:link, .songsBox a:visited {
+ color:#777777;
+ 
+}
+.songsBox a:hover {
+ text-decoration:underline;
+ color: #54010d;
+}
+a.songtitle:link, a.songtitle:visited {margin-left:0px;
+ color:#777777;
+ text-decoration:none;
+ font-size:14px;
+ font-weight:bold;
+}
+a.songtitle:hover {
+margin-left:25px;
+ color: #54010d;
+ text-decoration:underline;
+}
+	.songsBox .actionlinks {font-size:12px;}  /* the links for full song info, add to station, rate this song... */
+	.songsBox .topSong {float:left; text-align:left; color: #D8A500; font-size:11px;}
+
+/*  comments page  */
+	.commentsWelcome {margin:0px 20px 20px 20px; padding:20px; background:#111111; border: 0;}
+	.commentsBox { padding-top:5px; color:black; border-bottom:#CCCCCC dashed 1px;}
+		.commentsBox a:link, .commentsBox a:visited {color:blue; text-decoration:none;}
+		.commentsBox a:hover {color:red; text-decoration:underline;}
+	.commentsBox .songComment {border-bottom:#999999 dashed 1px; font-size:11px; padding:1px 3px; margin-bottom:5px;}
+	.commentsBox .postdate {text-align:right; margin:0px 5px 10px 0px; color:#C0C0C0; font-size:11px; font-weight:normal;}
+		.commentsBox .postdate a:link, .commentsBox .postdate a:visited {color:#8E8EFF; text-decoration:none;} /* for delete/edit links */
+		.commentsBox .postdate a:hover {color:red; text-decoration:underline;}
+	.commentsBox .comment {padding:0px 5px 0px 140px; font-size:12px;}
+	.commentsBox .bandSignature {border-top:silver dotted 1px; color:#AAAAAA; width:310px; margin-top:15px; line-height:20px;}
+	.commentsBox .ratingsBox {float:right; width:220px; border-left:#999999 dashed 1px; margin-bottom:10px;}
+			.ratingsBox .label {width:115px; text-align:right; float:left; padding-right:20px;} /* also used for .commentsPostBox .ratingsBox */
+	.commentsPostBox {padding:10px; margin:20px 0px; background:#111111; border-top:black solid 2px; border-bottom:black solid 1px;}
+	.commentsPostBox .ratingsBox {background:#111111; clear:both; padding:7px 0px; margin:0px 250px 20px 30px;}
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">_qacct="p-23XeoURjgKGF2";quantserve();</script>
+<noscript>
+<a href="http://www.quantcast.com/p-23XeoURjgKGF2" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-23XeoURjgKGF2.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
+</noscript>
+<!-- End Quantcast tag -->

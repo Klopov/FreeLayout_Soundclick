@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D9DFF25-4DF4-4429-AD30-3870D91391BF}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Layout_1\css.txt" />
+    <None Include="Layout_1\Images\8839.jpg" />
+    <None Include="Layout_1\Images\SongBox.png" />
+    <None Include="Layout_1\Images\Soundcloud.png" />
+    <None Include="Layout_1\Images\buy_now.png" />
+    <None Include="Layout_1\Images\contact.png" />
+    <None Include="Layout_1\Images\copyright.png" />
+    <None Include="Layout_1\Images\twitter.png" />
+    <None Include="Layout_1\Images\youtube.png" />
+    <None Include="Layout_2\css.txt" />
+    <None Include="Layout_2\Images\Download_BeatTape.png" />
+    <None Include="Layout_2\Images\Email_Me.png" />
+    <None Include="Layout_2\Images\buynow.png" />
+    <None Include="Layout_2\Images\information.png" />
+    <None Include="Layout_2\Images\lbop.jpg" />
+    <None Include="Layout_2\Images\songsbox.png" />
+    <None Include="Layout_2\Images\tw.png" />
+    <None Include="Layout_3\css.txt" />
+    <None Include="Layout_3\Images\banner1.png" />
+    <None Include="Layout_3\Images\banner2.png" />
+    <None Include="Layout_3\Images\bground.png" />
+    <None Include="Layout_3\Images\buynow.png" />
+    <None Include="Layout_3\Images\fb1.png" />
+    <None Include="Layout_3\Images\fb2.png" />
+    <None Include="Layout_3\Images\gm1.png" />
+    <None Include="Layout_3\Images\gm2.png" />
+    <None Include="Layout_3\Images\layout.png" />
+    <None Include="Layout_3\Images\songbox.png" />
+    <None Include="Layout_3\Images\tw1.png" />
+    <None Include="Layout_3\Images\tw2.png" />
+  </ItemGroup>
+</Project>

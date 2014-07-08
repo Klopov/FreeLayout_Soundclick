@@ -1,0 +1,495 @@
+/*  general  */
+	body {
+        background-color: #000000;
+        background-image: url(http://imageshack.com/a/img600/8820/2nsn.jpg);
+        background-attachment: scroll;
+        background-position: 50% 0px;
+        background-repeat: repeat;
+        margin:0px;
+        overflow-x: hidden;
+    }
+	body,div,tr,td,select,textarea,input,option {font-family:Verdana,Arial; font-size:12px;}
+	a, a:link, a:visited {
+        color: #7E7E7E; 
+        text-decoration: underline;    
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+	a:hover {
+        color: #FFFFFF;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+	.pageFooter {clear:both; color:gray; padding:30px 0px 50px 20px;}
+	.infoBox {width:650px; margin:50px auto; border:silver solid 1px; padding:30px; font-size:14px;}  /* hardly used, its for error messages to user */
+		.infoBox .quotes {margin:20px; font-style:italic; padding:10px; background:#ECECEC;}
+	/*  for custom header, use like this: .customCSSHeader {display:block; background: url(LINK_TO_YOUR_IMAGE) center no-repeat; height: INSERT_HEIGHT_IN_PIXELS_HERE;  }   */
+	.navBreadcrumbs a{color: white !important;}
+	.navBreadcrumbs a:hover{color: #FFE900 !important;}
+	.customCSSHeader {display:none;}
+    
+  
+	/*  main page: VIP embedded player (only this embedded player or the standard song box is used. Never both together) */
+	.embeddedPlayer {
+	width: 620px;
+	height: 150px;
+    margin-left: 200px;
+    margin-top: 738px;
+	position: absolute;
+    top: 0;
+	z-index: 30;
+    }
+
+    .PayPal { 
+        color: #AEAEAE;
+        font-size: 15px;
+        margin-left: 29px;
+        margin-top: 950px;
+        position: absolute;
+        top: 0;
+        text-align: center !important;
+        z-index: 30;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+
+
+    .PayPal2 { 
+        color: #AEAEAE;
+        font-size: 15px;
+        margin-left: 354px;
+        margin-top: 951px;
+        position: absolute;
+        top: 0;
+        text-align: center !important;
+        z-index: 30;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }  
+    .completeNavHeader {display: none !important;}
+	.completeNavHeader {z-index: 999;  position:relative;background-color:#646464;-webkit-transition: all 1s ease-in-out;-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;transition: all 1s ease-in-out; opacity: .2; top:-55px; left:0px; margin: 0 auto 0px;  } 
+	
+         .completeNavHeader:hover {opacity: .7;  top:0px; } 
+	.navbarTop {background-color: transparent;}
+	.navbar {background-color: transparent !important; background-image: url(http://www.soundclick.com/images/siteNav/transBGBlocks/black/bg_80.png) !important;
+	background-origin: padding-box !important; background-position: 0% 0% !important; background-repeat: repeat !important; background-size: auto !important; color: #d02cb6 !important}
+	.navbar:a {color: #d02cb6 !important}
+	.navbarBottom {color: white !important;}
+
+
+.cls {
+    clear: both;
+}
+
+    .YouTube {
+        background-color: transparent;
+        /*left: 50%;*/
+        margin-left: 147px;
+        margin-top: 1291px;
+        position: absolute;
+        top: 0;
+        z-index: 30;
+    }
+
+
+    #BuyNow{
+        display: block;
+        left: 7px;
+        opacity: 0;
+        margin-top: 206px;
+        position: absolute;
+        top: 0;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }    
+    #BuyNow:hover{
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+    #moya_menu {
+        background-image: url(http://imageshack.com/a/img823/9596/8839.jpg);
+        background-repeat: no-repeat;
+        height: 1730px;
+        margin-left: -685px;
+        position: absolute;
+        top: 0;
+        width: 2363px;
+    }    
+    #contact{
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/cloudlight3/contact.png);
+        display: block;
+        /*left: 50%;*/
+        margin-left: 686px;
+        height: 36px;
+        opacity: 0;
+        margin-top: 1156px;
+        position: absolute;
+        top: 0;
+        width: 269px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }    
+    #contact:hover{
+
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    } 
+
+
+    
+	#tw {    
+        background-image: url(http://imageshack.com/a/img836/9071/7cxo.png); 
+        display: block;  
+        height: 101px;        
+        opacity: 0;
+      /* left: 50%;*/
+        margin-left: 446px;
+        margin-top: 546px;
+        position: absolute;
+        top: 0;      
+        width: 102px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+    
+	#tw:hover {   
+        margin-top: 546px;
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+      
+    }  
+    
+	#yt {    
+        background-image: url(http://imageshack.com/a/img691/9141/qng.png); 
+        display: block;  
+        height: 71px;       
+        opacity: 0;
+       /* left: 50%;*/
+        margin-left: 744px;
+        margin-top: 560px;
+        position: absolute;
+        top: 0;      
+        width: 72px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        transform:rotate(180deg);
+       /*  -ms-transform:rotate(180deg); /* IE 9 */*/
+        /* -webkit-transform:rotate(180deg); /* Safari and Chrome */*/
+    }
+    
+	#yt:hover {   
+        margin-top: 560px;
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        transform:rotate(0deg);
+       /*  -ms-transform:rotate(0deg); /* IE 9 */*/
+         /*-webkit-transform:rotate(0deg); /* Safari and Chrome */     */
+    }  
+
+	#sc {    
+        background-image: url(http://imageshack.com/a/img855/2724/mf7j.png);
+        display: block;  
+        height: 72px;       
+        opacity: 0;
+      /*  left: 50%;*/
+        margin-left: 171px;
+        margin-top: 560px;
+        position: absolute;
+        top: 0;      
+        width: 74px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+  
+transform:rotate(180deg);
+/* -ms-transform:rotate(180deg); /* IE 9 */*/
+ /*-webkit-transform:rotate(180deg); /* Safari and Chrome */*/
+    }
+    
+	#sc:hover {
+        margin-top: 560px;
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+      
+transform:rotate(0deg);
+ /* -ms-transform:rotate(0deg); /* IE 9 */*/
+/* -webkit-transform:rotate(0deg); /* Safari and Chrome */*/
+    }
+    
+	#copyright {    
+        background-image: url(https://dl.dropboxusercontent.com/u/53239925/design/cloudlight3/copy.png); 
+        display: block; 
+        height: 47px; 
+        margin-left: 395px;
+        margin-top: 1613px;
+        opacity: 0;
+        position: absolute; 
+        top: 0;
+        width: 222px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+        z-index: 30;
+    }
+    
+	#copyright:hover {    
+        margin-top: 1619px;
+        opacity: 1;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    } 
+   
+    .news {
+        color: #FFFFFF;
+        left: 50%;
+        font-size: 12px;
+        height: 75px !important;
+        margin-left: -494px;
+        margin-top: 1216px;
+        opacity: 0.7;
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        width: 992px;
+        z-index: 30;
+        -webkit-transition: .4s all ease-in-out;
+        -moz-transition: .4s all ease-in-out;
+        -o-transition: .4s all ease-in-out;
+        transition: .4s all ease-in-out;
+    }  
+
+    .news marquee{
+        height: 75px !important;    
+        text-align: center;
+    }  
+    
+    .news:hover {
+        opacity: 1;
+         -webkit-transition: .4s all ease-in-out;
+        -moz-transition: .4s all ease-in-out;
+        -o-transition: .4s all ease-in-out;
+        transition: .4s all ease-in-out;       
+    }       
+
+/*  main containers  */
+	.mainTable {background-color: transparent; border: 0px;  width: 1022px; margin-left: auto; margin-right: auto;}
+	.mainContent {background-color: transparent; width: 1022px; margin-left: auto; margin-right: auto;}
+	.sideAd {width:300px; height:260px; margin:3px 2px 15px 10px; float:right; text-align:center; overflow:visible;}
+	.sideAdSky {width:160px; height:610px; margin:3px 0px 15px 0px; float:right; text-align:center; overflow:visible; border-left:#999999 solid 1px;}
+
+/*  left navigation  */
+	.navigation {background:inherit; width:1022px; height: 1700px; float:left; overflow:hidden; margin:-50px -50px -20px 0px; display:block; z-index:30;}
+		.navigation a:link, .navigation a:visited {color:inherit;}
+		.navigation a:hover {color:inherit;}
+	.navigationDivider {height:6px; margin-bottom:6px;}
+
+/*  general elements  */
+	.headline {background:transparent; color:transparent; font-size:1px; font-weight:bold;  border-top:#333333 solid 1px; padding:3px 0px 3px 6px; text-align:right; margin-left: 300px; display: none;}
+	.headlineBig {font-size:22px; font-weight:normal;}
+	.headlineSuppl {float:right; margin:10px 5px 0px 0px; color:#transparent; font-size:1px; font-weight:normal;} /* for text/links on the right side of main headline (e.g. song count on main page) */
+		.headlineSuppl a:link, .headlineSuppl a:visited {color:#transparent; text-decoration:none;}
+		.headlineSuppl a:hover {color:transparent; text-decoration:underline;}
+	.pageturner {text-align:right; padding:10px; font-size:13px; font-weight:normal; color: #D7D7D7; background:transparent; border: 0;
+            -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }  /* pages menu (previous, next..), e.g. on music page, message board */
+		.pageturner .nonactive {color:#999999;}
+		.pageturner a:hover {color: white !important; text-decoration:underline;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;}
+		.pageturner a:link, .pageturner a:visited {color: #A4A4A4; text-decoration:none;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;}
+	.listedPicsBox {background:white; color:black; width:114px; height:160px; overflow:hidden; padding:2px 1px 4px 1px; margin:0px 4px 10px 4px; border:solid #cccccc 1px; float:left; font-size:11px; text-align:center;}
+		.listedPics {width:110px; height:125px; background-position: center center; background-repeat: no-repeat; margin:2px 0px 4px 0px; overflow:hidden}
+	.breaker {height:1px; line-height:1px; clear:both}
+
+/*  general color and font assets */
+	.color_supplemental {color:silver;} 	/* used e.g. for song pages comments count */
+	.alternateBG0 {background:#ffffff;}		/* used as background colors for comments */
+	.alternateBG1 {background:#f0f0f0;}		/* alternate color */
+
+/*  main page (the default entry page) */
+	.mainContent .contHeadline	{clear:left; font-family:Tahoma,Trebuchet MS,Verdana,Arial; font-size:14px; color:#E3E3E3; padding:12px 0px 2px 20px;}
+	.mainContent .contText {clear:left; font-size:13px; padding-left:15px;}
+	.mainContent .contInterview {clear:left; font-size:13px; padding-left:35px;}
+	.mainContent .newsBox {clear:both; margin:0px 20px 20px 20px; padding:20px; background:#ECECEC; border:#cccccc solid 2px;}
+	
+	/*  main page: video box (different from video page)   */
+	.videoBox_mainPage {background:#F5F5F5; color:#333333; padding:5px; margin:0px 100px 20px 100px;}
+		.videoBox_mainPage .video {padding:5px; margin-bottom:10px;}
+		.videoBox_mainPage .title {color:#333333; font-size:15px; text-align:center; margin-bottom:3px;}
+		.videoBox_mainPage .shareLinks {float:right; padding:2px; border-bottom:#CCCCCC dashed 1px;}
+		.videoBox_mainPage .labels {color:#999999; width:100px; padding-right:20px; text-align:right; float:left;}
+		.videoBox_mainPage .info {padding-left:120px;}
+		.videoBox_mainPage a:link, .videoBox_mainPage a:visited {color:blue; text-decoration:none; font-size:11px; font-weight:normal;}
+		.videoBox_mainPage a:hover {color:red; text-decoration:underline;}
+
+	/*  main page: upcoming shows  */
+	.liveshowsBox {width:300px; background:#006699; color:#FFFFFF; margin:15px 2px 15px 10px; float:right; clear:right;}
+		.liveshowsItems {padding:4px 0px 0px 0px; font-size:11px; clear:both;}
+		.liveshowsBox a:link, .liveshowsBox a:visited {color:white; text-decoration:none;}
+		.liveshowsBox a:hover {color:#FFD900; text-decoration:underline; cursor:pointer;}
+	
+	/*  main page: standard song box on artist page (only this song box or the embedded player is used. Never both together)  */
+	.playerBox {float:left; clear:left; padding-left:20px; margin:200px 0px 3px 0px;}
+		.playerBox .playerHead {text-align:right; background:#F6F6F6; color:#006699; font-size:12px; padding:5px 10px 5px 3px; border-top:solid 1px #ECECEC; border-bottom:solid 1px #999999;}
+			.playerBox .playerHead a:link,.playerBox .playerHead a:visited {color:blue; text-decoration:underline;}
+			.playerBox .playerHead a:hover {color:red; text-decoration:underline;}
+		.playerBox .songBox {width:330px; padding:3px 0px 0px 1px; overflow:auto; background:white url(http://www.soundclick.com/images/themes/gradientBGwhite.jpg) repeat-x; border-bottom:solid 1px #ECECEC;}
+		.playerBox .songBox .singleSong {font-size:11px; border-bottom:dashed 1px #CECEFF; padding:1px;}
+		.playerBox .songBox .singleSong:hover {background:#999999; cursor:pointer;}
+		
+
+	/*  main page: tabbed content headers (fans,stations) */
+	.tabbedCont_header li a:link, .tabbedCont_header li a:visited {background:#ffffff; color:gray; text-decoration:none; margin:0px 20px 0px 0px; padding:3px 6px 3px 6px; border:#C0C0C0 solid 1px; border-bottom:none;}
+		.tabbedCont_header li a:hover {background:#ECECEC; color:#006699;}
+		.tabbedCont_header li.selected a:link, .tabbedCont_header li.selected a:visited {background:#ECECEC; color:#006699; border:black solid 1px; font-weight:bold; border-bottom:#ECECEC solid 1px;}
+	
+	/*  main page: fans, stations (tabbed content)  */
+	.fansBox {padding:30px 20px 20px 20px; clear:both;}
+			.fansBox a:link, .fansBox a:visited {color:blue; text-decoration:none;}
+			.fansBox a:hover {color:red; text-decoration:underline;}
+			.fansBox .listedPicsBox, .fansBox .stationItem {background:white;}
+			.fansBox .listedPicsBox:hover, .fansBox .stationItem:hover {background:#ECECEC;}
+		.fancount {text-align:right; padding:3px 5px 3px 5px; margin-bottom:8px; font-size:11px; font-weight:normal; color:#999999; background:#ECECEC; border-bottom:#CECEFF dashed 1px; border-top:#333333 solid 1px; }
+		.fansBox_content {background:white;}
+		.fansBoxLastLine {clear:both; text-align:right; padding:3px 5px 3px 6px; margin:8px 0px 8px 0px; font-size:11px; font-weight:normal; color:#999999; background:#ECECEC; border-bottom:#666666 solid 1px; border-top:#CCCCCC dashed 1px;}
+		.stationItem {clear:both; color:black; border-bottom:#CCCCCC dashed 1px; padding:0px 1px 0px 1px;}
+		.stationPicBox {float:left;}
+			.stationPics {width:70px; height:70px; background-position:center center; background-repeat: no-repeat; margin:0px 0px 1px 0px; overflow:hidden}
+		.stationButtonsBox {float:left; padding:2px 15px 0px 5px; height:60px;}
+		.stationsText {height:70px; overflow:hidden;}
+		.stationlink a:link, .stationlink a:visited {color:black; font-size:13px; text-decoration:none;}
+			.stationlink a:hover {color:red; text-decoration:underline;}
+
+/*  music page  */
+.songsBox {
+ border-bottom:#d7d7d7;dashed 0px;
+
+ float:left;
+ padding-bottom:2px;
+ margin-bottom:40px;
+}
+.songsBox {
+        overflow:hidden;
+	/*background: url(https://dl.dropboxusercontent.com/u/53239925/design/cloudlight3/songsbox.png);*/
+        background: url(http://imageshack.com/a/img560/2474/9t2p.png);
+	background-repeat: no-repeat;
+	background-position:10px 0px;
+
+-webkit-transition: .5s all ease-in-out;-moz-transition: .5s all ease-in-out;
+-o-transition: .5s all ease-in-out;transition: .5s all ease-in-out;
+}
+.songsBox .topSong:hover {color:#ffff; float:left; text-align:left; font-size:13px;font-weight:bold;right:20px;}
+
+.songsBox a:hover {text-decoration:underline; color:#000000;-webkit-transition: .9s all ease-in-out;-moz-transition: .9s all ease-in-out;
+-o-transition: .9s all ease-in-out;transition: .9s all ease-in-out;}
+
+
+a.songtitle:link, a.songtitle:visited {color:#A4A4A4; text-decoration:none; font-size:13px; font-weight:bold;-webkit-transition: .9s all ease-in-out;-moz-transition: .9s all ease-in-out;
+-o-transition: .9s all ease-in-out;transition: .9s all ease-in-out;}
+a.songtitle:hover {color: white; margin-left:10px;-webkit-transition: .9s all ease-in-out;-moz-transition: .9s all ease-in-out;
+-o-transition: .9s all ease-in-out;transition: .9s all ease-in-out; }
+
+.songsBox:hover {
+        overflow:hidden;
+}
+.songsBox a:link, .songsBox a:visited {
+color: #838383;
+ 
+}
+.songsBox a:hover {
+ text-decoration:underline;
+  color: #000000;
+}
+a.songtitle:link, a.songtitle:visited {margin-left:0px;
+ color:#A4A4A4
+ text-decoration:none;
+ font-size:13px;
+ font-weight:bold;
+}
+a.songtitle:hover {
+margin-left:25px;
+ color: #000000;
+ text-decoration:underline;
+}
+	.songsBox .actionlinks {font-size:12px;}  /* the links for full song info, add to station, rate this song... */
+	.songsBox .topSong {float:left; text-align:left; color:#999999; font-size:11px;}
+
+/*  comments page  */
+	.commentsWelcome {margin:0px 20px 20px 20px; padding:20px; background:#111111; border: 0;}
+	.commentsBox { padding-top:5px; color:black; border-bottom:#CCCCCC dashed 1px;}
+		.commentsBox a:link, .commentsBox a:visited {color:blue; text-decoration:none;}
+		.commentsBox a:hover {color:red; text-decoration:underline;}
+	.commentsBox .songComment {border-bottom:#999999 dashed 1px; font-size:11px; padding:1px 3px; margin-bottom:5px;}
+	.commentsBox .postdate {text-align:right; margin:0px 5px 10px 0px; color:#C0C0C0; font-size:11px; font-weight:normal;}
+		.commentsBox .postdate a:link, .commentsBox .postdate a:visited {color:#8E8EFF; text-decoration:none;} /* for delete/edit links */
+		.commentsBox .postdate a:hover {color:red; text-decoration:underline;}
+	.commentsBox .comment {padding:0px 5px 0px 140px; font-size:12px;}
+	.commentsBox .bandSignature {border-top:silver dotted 1px; color:#AAAAAA; width:310px; margin-top:15px; line-height:20px;}
+	.commentsBox .ratingsBox {float:right; width:220px; border-left:#999999 dashed 1px; margin-bottom:10px;}
+			.ratingsBox .label {width:115px; text-align:right; float:left; padding-right:20px;} /* also used for .commentsPostBox .ratingsBox */
+	.commentsPostBox {padding:10px; margin:20px 0px; background:#111111; border-top:black solid 2px; border-bottom:black solid 1px;}
+	.commentsPostBox .ratingsBox {background:#111111; clear:both; padding:7px 0px; margin:0px 250px 20px 30px;}
+
+
+
+/*  widgets page  */
+	.widgetMargin { padding:8px 0px 8px 35px;}
+	.widgetSpacer {width:100%; height:15px; clear:both;}
+	
+
+			
+.statsNumbers {
+z-index: 1212; 
+left: 50%; 
+position: absolute; 
+width:10px; 
+height: 10px;
+font-size: 10px;
+color:#ccc; 	
+text-shadow: 1px 1px 0px #000; top: 0;  margin-left: 304px; margin-top:68px;
+}
