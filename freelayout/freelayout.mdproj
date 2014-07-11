@@ -61,5 +61,17 @@
     <None Include="Layout_5\Image\cde1879822a9.png" />
     <None Include="Layout_5\Image\e286135d3232.png" />
     <None Include="Layout_5\Image\ed768ed3e084.png" />
+    <None Include="Images\5twz.jpg" />
+    <None Include="Images\Facebookjpg.jpg" />
+    <None Include="Images\Twitter.jpg" />
+    <None Include="Images\bground.jpg" />
+    <None Include="Images\buy_now.png" />
+    <None Include="Images\copyright.jpg" />
+    <None Include="Images\info.png" />
+    <None Include="Images\instant_stiore.png" />
+    <None Include="Images\license_bar.jpg" />
+    <None Include="Images\nhtl.jpg" />
+    <None Include="Images\production_catalog.png" />
+    <None Include="Images\social_bar.jpg" />
   </ItemGroup>
 </Project>
