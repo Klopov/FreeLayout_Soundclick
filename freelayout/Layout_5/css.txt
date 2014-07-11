@@ -1,0 +1,890 @@
+
+
+/* tag cloud */
+	.tagCloud {padding:10px;}
+	.tagCloud .cloudItem {float:left; padding:2px; white-space:nowrap; margin:0 6px 0 0;}
+	.tagCloud .cloudItem:hover {background:#005782; color:white; cursor:pointer;}
+	.tagCloud .cloudS10 {font-size:10px; color:#aaaaaa;}
+	.tagCloud .cloudS20 {font-size:11px; color:#aaaaaa;}
+	.tagCloud .cloudS30 {font-size:11px; color:#999999;}
+	.tagCloud .cloudS40 {font-size:12px; color:#999999;}
+	.tagCloud .cloudS50 {font-size:14px; color:#666666;}
+	.tagCloud .cloudS60 {font-size:16px; color:#666666;}
+	.tagCloud .cloudS70 {font-size:18px; color:#333333;}
+	.tagCloud .cloudS80 {font-size:22px; color:#333333;}
+	.tagCloud .cloudS90 {font-size:28px; color:#111111; }
+	.tagCloud .cloudS100 {font-size:36px; color:#111111;}
+	.tagCloudMore {padding:6px 0 0 0; margin:0 10px; text-align:center; border-top:#ccc solid 1px; font-size:11px;}
+	.tagCloudMore a, .tagCloudMore a:link, .tagCloudMore a:visited {color:#999; text-decoration:none;}
+	.tagCloudMore a:hover {color:red; text-decoration:underline; cursor:pointer;}
+
+/*************    ******************/
+
+/*  general  */
+	body {
+        background-color: #000000;
+        background-image: url(http://s004.radikal.ru/i206/1407/47/944807d37715.png);
+       /* background-position: 50% 0px;*/
+        background-position:top;
+	/*margin: 0 auto;*/
+        background-repeat: repeat;
+      /*  margin:0px;*/
+        overflow-x: hidden;
+    }
+	body,div,tr,td,select,textarea,input,option {font-family:Verdana,Arial; font-size:12px;}
+	a, a:link, a:visited {
+        color: #7E7E7E; 
+        text-decoration: underline;    
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+	a:hover {
+        color: #FFFFFF;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+	.pageFooter {clear:both; color:gray; padding:30px 0px 50px 20px;}
+	.infoBox {width:650px; margin:50px auto; border:silver solid 1px; padding:30px; font-size:14px;}  /* hardly used, its for error messages to user */
+		.infoBox .quotes {margin:20px; font-styl&#101;:italic; padding:10px; background:#ECECEC;}
+	/*  for custom header, use like this: .customCSSHeader {display:block; background: url(LINK_TO_YOUR_IMAGE) center no-repeat; height: INSERT_HEIGHT_IN_PIXELS_HERE;  }   */
+	.navBreadcrumbs a{color: white !important;}
+	.navBreadcrumbs a:hover{color: #FFE900 !important;}
+	.customCSSHeader {display:none;}
+    
+
+	/*  main page: VIP embedded player (only this embedded player or the standard song box is used. Never both together) */
+	.embeddedPlayer {
+	width: 620px;
+	height: 150px;
+    margin-left: -31px;
+    margin-top: 363px;
+	position: absolute;
+    top: 0;
+	z-index: 30;
+    }
+
+br {display:none;}
+
+    #content_cs
+  {
+        background-image: url(http://s006.radikal.ru/i215/1407/17/3cfbac87a952.png);
+        background-repeat: no-repeat;
+        height: 1308px;
+        top: 0;
+        margin: 0 -50px auto;
+        position: absolute;
+        width: 1088px;
+       z-index: 0;
+    }   
+/***************************************BANER******************************/
+#index{position:absolute; z-index:1000; left: 50%;}
+.baner
+{
+      position:absolute;
+      width: 454px;
+      height:600px;
+      margin-top:14px;
+     margin-left:584px;
+     opacity: 0;
+     background-image: url(http://i038.radikal.ru/1407/55/8bedebeff7ab.png);
+    -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+}
+.baner:hover
+{
+     opacity: 1;
+}
+
+#downloadbaner
+{
+      background-image: url(http://s019.radikal.ru/i623/1407/5a/cde1879822a9.png);
+      height: 44px;
+      width: 309px;
+      opacity: 0;
+      margin-top: 274px;
+      margin-left: 73px;
+-webkit-transition: .1s all ease-in-out;
+        -moz-transition: 1s all ease-in-out;
+        -o-transition: .1s all ease-in-out;
+        transition: .1s all ease-in-out;
+}
+#downloadbaner:hover
+{
+      opacity: 1;
+}
+
+
+#buybaner
+{
+      height: 44px;
+      width: 309px;
+      opacity: 0;
+      margin-top: 10px;
+      margin-left: 73px;
+      position:relative;
+-webkit-transition: .1s all ease-in-out;
+        -moz-transition: .1s all ease-in-out;
+        -o-transition: .1s all ease-in-out;
+        transition: .1s all ease-in-out;
+}
+#buybaner:hover
+{
+      opacity: 1;
+}
+/***********************************************************************/
+
+#mail-link
+{
+     background-image: url(http://s52.radikal.ru/i138/1407/cc/7915380829e9.png);
+     opacity: 0;
+     width:213px;
+     height:15px;
+     position: absolute;
+     margin-top:623px;
+     margin-left:366px;
+}
+#mail-link:hover
+{
+     opacity: 1;
+}
+/**********************************************VOCALSERVISE************************/
+
+.vocalservice
+{
+ background-image: url(http://s020.radikal.ru/i721/1407/ba/40b7f643d708.png);
+      height: 300px;
+      width: 628px;
+      opacity: 0;
+      margin-top: 663px;
+      margin-left: -50px;
+    -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+      position:absolute;
+}
+.vocalservice:hover {  opacity: 1;}
+#information
+{
+background-image: url(http://s005.radikal.ru/i210/1407/e6/4d86710970d9.png);
+      height: 44px;
+      width: 225px;
+      opacity: 0;
+      margin-top: 128px;
+      margin-left: 49px;
+-webkit-transition: .1s all ease-in-out;
+        -moz-transition: .1s all ease-in-out;
+        -o-transition: .1s all ease-in-out;
+        transition: .1s all ease-in-out;
+}
+#information:hover { opacity: 1;}
+#example
+{
+background-image: url(http://s50.radikal.ru/i130/1407/ef/b795b26c4a64.png);
+      height: 44px;
+      width: 225px;
+      opacity: 0;
+      margin-top: -44px;
+      margin-left: 361px;
+-webkit-transition: .1s all ease-in-out;
+        -moz-transition: .1s all ease-in-out;
+        -o-transition: .1s all ease-in-out;
+        transition: .1s all ease-in-out;
+}
+#example:hover { opacity: 1;}
+
+/**************************************MIX  DESIGN*********************/
+.mixing
+{
+ background-image: url(http://s020.radikal.ru/i711/1407/6e/ed768ed3e084.png);
+      height: 145px;
+      width: 454px;
+      opacity: 0;
+      margin-top: 663px;
+      margin-left: 584px;
+    -webkit-transition: .1s all ease-in-out;
+        -moz-transition:  1s all ease-in-out;
+        -o-transition: .1s all ease-in-out;
+        transition: .1s all ease-in-out;
+      position:absolute;
+}
+.mixing:hover {opacity: 1;}
+
+.design
+{
+      background-image: url(http://s51.radikal.ru/i131/1407/37/7abea2e6ea14.png);
+      height: 145px;
+      width: 454px;
+      opacity: 0;
+      margin-top: 818px;
+      margin-left: 584px;
+    -webkit-transition: .1s all ease-in-out;
+        -moz-transition:  1s all ease-in-out;
+        -o-transition: .1s all ease-in-out;
+        transition: .1s all ease-in-out;
+      position:absolute;
+}
+.design:hover{opacity: 1;}
+
+/******************************SLIDER*******************************/
+
+
+
+.sliderr
+{
+position: absolute;
+	margin-left: -46px;
+	 height: 300px;
+	width: 1080px;
+        z-index: 201;
+}
+#block_slider
+{
+	margin-top: -1415px;
+	margin-left: -46px;
+	 height: 300px;
+	width: 1080px;
+        z-index: 200;
+}
+#slider
+{
+	height: 300px;
+	width: 1080px;
+}
+#mask
+{
+	z-index: 2;
+	overflow:hidden;
+	 height: 300px;
+	width: 1080px;
+	margin: 0 auto;
+	position: absolute;
+}
+#mask .blick
+{
+        height: 300px;
+	width: 1080px;
+        z-index:100;
+       position: absolute;
+      background-image:url(http://s004.radikal.ru/i207/1407/b9/a9af6062df2f.png);
+}
+#mask li
+{
+	z-index:1;
+	height: 300px;
+	width: 1080px;
+	margin-top: 000px;
+	position: absolute;
+	list-styl&#101;: none;
+}
+#mask ul
+{
+	z-index:1;
+	margin: 0;
+	padding:0;
+	position:relative;
+}
+
+-webkit-keyfram&#101;s cycle1 {
+	0%  {margin-top: 0px; opacity: 1;}
+	20% {margin-top: 0px; opacity: 1;}
+	25% {margin-top: 300px; opacity: 0;}
+	93% {margin-top: -300px;opacity: 0;}
+	100%{margin-top: 0px;opacity: 1;}
+}
+-webkit-keyfram&#101;s cycle2{
+	0%  {margin-top: -300px;opacity: 0;}
+	20% {margin-top: -300px;opacity: 0;}
+	25% {margin-top: 0px;opacity: 1;}
+	45% {margin-top: 0px;opacity: 1;}
+	50% {margin-top: 300px;opacity: 0;}
+	100%{margin-top: -300px;opacity: 0;}
+}
+-webkit-keyfram&#101;s cycle3{
+	0%  {margin-top: -300px;opacity: 0;}
+	45% {margin-top: -300px;opacity: 0;}
+	50% {margin-top: 0px;opacity: 1;}
+	70% {margin-top: 0px;opacity: 1;}
+	75% {margin-top: 300px;opacity: 0;}
+	100%{margin-top: -300px;opacity: 0;}
+}
+-webkit-keyfram&#101;s cycle4{
+	0%  {margin-top: -300px;opacity: 0;}
+	70% {margin-top: -300px;opacity: 0;}
+	75% {margin-top: 0px;opacity: 1;}
+	93% {margin-top: 0px;opacity: 1;}
+	100%{margin-top: 300px;opacity: 0;}
+}
+-o-keyfram&#101;s cycle1 {
+	0%  {margin-top: 0px; opacity: 1;}
+	20% {margin-top: 0px; opacity: 1;}
+	25% {margin-top: 300px; opacity: 0;}
+	93% {margin-top: -300px;opacity: 0;}
+	100%{margin-top: 0px;opacity: 1;}
+}
+-o-keyfram&#101;s cycle2{
+	0%  {margin-top: -300px;opacity: 0;}
+	20% {margin-top: -300px;opacity: 0;}
+	25% {margin-top: 0px;opacity: 1;}
+	45% {margin-top: 0px;opacity: 1;}
+	50% {margin-top: 300px;opacity: 0;}
+	100%{margin-top: -300px;opacity: 0;}
+}
+-o-keyfram&#101;s cycle3{
+	0%  {margin-top: -300px;opacity: 0;}
+	45% {margin-top: -300px;opacity: 0;}
+	50% {margin-top: 0px;opacity: 1;}
+	70% {margin-top: 0px;opacity: 1;}
+	75% {margin-top: 300px;opacity: 0;}
+	100%{margin-top: -300px;opacity: 0;}
+}
+-o-keyfram&#101;s cycle4{
+	0%  {margin-top: -300px;opacity: 0;}
+	70% {margin-top: -300px;opacity: 0;}
+	75% {margin-top: 0px;opacity: 1;}
+	93% {margin-top: 0px;opacity: 1;}
+	100%{margin-top: 300px;opacity: 0;}
+}
+
+-moz-keyfram&#101;s cycle1 {
+	0%  {margin-top: 0px; opacity: 1;}
+	20% {margin-top: 0px; opacity: 1;}
+	25% {margin-top: 300px; opacity: 0;}
+	93% {margin-top: -300px;opacity: 0;}
+	100%{margin-top: 0px;opacity: 1;}
+}
+-moz-keyfram&#101;s cycle2{
+	0%  {margin-top: -300px;opacity: 0;}
+	20% {margin-top: -300px;opacity: 0;}
+	25% {margin-top: 0px;opacity: 1;}
+	45% {margin-top: 0px;opacity: 1;}
+	50% {margin-top: 300px;opacity: 0;}
+	100%{margin-top: -300px;opacity: 0;}
+}
+-moz-keyfram&#101;s cycle3{
+	0%  {margin-top: -300px;opacity: 0;}
+	45% {margin-top: -300px;opacity: 0;}
+	50% {margin-top: 0px;opacity: 1;}
+	70% {margin-top: 0px;opacity: 1;}
+	75% {margin-top: 300px;opacity: 0;}
+	100%{margin-top: -300px;opacity: 0;}
+}
+-moz-keyfram&#101;s cycle4{
+	0%  {margin-top: -300px;opacity: 0;}
+	70% {margin-top: -300px;opacity: 0;}
+	75% {margin-top: 0px;opacity: 1;}
+	93% {margin-top: 0px;opacity: 1;}
+	100%{margin-top: 300px;opacity: 0;}
+}
+
+keyfram&#101;s cycle1 {
+	0%  {margin-top: 0px; opacity: 1;}
+	20% {margin-top: 0px; opacity: 1;}
+	25% {margin-top: 300px; opacity: 0;}
+	93% {margin-top: -300px;opacity: 0;}
+	100%{margin-top: 0px;opacity: 1;}
+}
+keyfram&#101;s cycle2{
+	0%  {margin-top: -300px;opacity: 0;}
+	20% {margin-top: -300px;opacity: 0;}
+	25% {margin-top: 0px;opacity: 1;}
+	45% {margin-top: 0px;opacity: 1;}
+	50% {margin-top: 300px;opacity: 0;}
+	100%{margin-top: -300px;opacity: 0;}
+}
+keyfram&#101;s cycle3{
+	0%  {margin-top: -300px;opacity: 0;}
+	45% {margin-top: -300px;opacity: 0;}
+	50% {margin-top: 0px;opacity: 1;}
+	70% {margin-top: 0px;opacity: 1;}
+	75% {margin-top: 300px;opacity: 0;}
+	100%{margin-top: -300px;opacity: 0;}
+}
+keyfram&#101;s cycle4{
+	0%  {margin-top: -300px;opacity: 0;}
+	70% {margin-top: -300px;opacity: 0;}
+	75% {margin-top: 0px;opacity: 1;}
+	93% {margin-top: 0px;opacity: 1;}
+	100%{margin-top: 300px;opacity: 0;}
+}
+
+/******************************************************************/
+
+.progress-bar {
+   position: absolute;
+   top: 295px;
+   width: 1080px;
+   height: 5px;
+   background: #000;
+   
+   animation: fullexpand 20s linear infinite;
+   -o-animation: fullexpand 20s linear infinite;
+   -moz-animation: fullexpand 20s linear infinite;
+   -webkit-animation: fullexpand 20s linear infinite;
+}
+-webkit-keyfram&#101;s fullexpand {
+   0%, 25%, 50%, 75%{ width: 0%; opacity: 0; }
+   1%, 26%, 51%, 76%{ width: 0%; opacity: 0.5; }
+   16%, 41%, 66%, 90%{ width: 100%; opacity: 0.5; }
+   18%, 43%, 68%, 93%{ width: 100%; opacity: 0; }
+   100% { width: 0%; opacity: 0; }
+}
+-o-keyfram&#101;s fullexpand {
+  0%, 25%, 50%, 75%{ width: 0%; opacity: 0; }
+   1%, 26%, 51%, 76%{ width: 0%; opacity: 0.5; }
+   16%, 41%, 66%, 90%{ width: 100%; opacity: 0.5; }
+   18%, 43%, 68%, 93%{ width: 100%; opacity: 0; }
+   100% { width: 0%; opacity: 0; }
+}
+-moz-keyfram&#101;s fullexpand {
+  0%, 25%, 50%, 75%{ width: 0%; opacity: 0; }
+   1%, 26%, 51%, 76%{ width: 0%; opacity: 0.5; }
+   16%, 41%, 66%, 90%{ width: 100%; opacity: 0.5; }
+   18%, 43%, 68%, 93%{ width: 100%; opacity: 0; }
+   100% { width: 0%; opacity: 0; }
+}
+keyfram&#101;s fullexpand {
+   0%, 25%, 50%, 75%{ width: 0%; opacity: 0; }
+   1%, 26%, 51%, 76%{ width: 0%; opacity: 0.5; }
+   16%, 41%, 66%, 90%{ width: 100%; opacity: 0.5; }
+   18%, 43%, 68%, 93%{ width: 100%; opacity: 0; }
+   100% { width: 0%; opacity: 0; }
+}
+
+/*****************************************************************/
+
+
+
+
+
+
+
+
+    .PayPal { 
+        margin-left: -20px;
+        margin-top: 800px;
+        position: absolute;
+        top: 0;
+        text-align: center !important;
+        z-index: 30;
+        -webkit-transition: .1s all ease-in-out;
+        -moz-transition: .1s all ease-in-out;
+        -o-transition: .1s all ease-in-out;
+        transition: .1s all ease-in-out;
+    }
+
+
+    .PayPal2 { 
+        margin-left: 285px;
+        margin-top: 800px;
+        position: absolute;
+        top: 0;
+        text-align: center !important;
+        z-index: 30;
+        -webkit-transition: .1s all ease-in-out;
+        -moz-transition: .1s all ease-in-out;
+        -o-transition: .1s all ease-in-out;
+        transition: .1s all ease-in-out;
+    }  
+    .completeNavHeader {display: none !important;}
+	.completeNavHeader {z-index: 999;  position:relative;background-color:#646464;-webkit-transition: all 1s ease-in-out;-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;transition: all 1s ease-in-out; opacity: .2; top:-55px; left:0px; margin: 0 auto 0px;  } 
+	
+         .completeNavHeader:hover {opacity: .7;  top:0px; } 
+	.navbarTop {background-color: transparent;}
+	.navbar {background-color: transparent !important; background-image: url(http://www.soundclick.com/images/siteNav/transBGBlocks/black/bg_80.png) !important;
+	background-origin: padding-box !important; background-position: 0% 0% !important; background-repeat: repeat !important; background-size: auto !important; color: #d02cb6 !important}
+	.navbar:a {color: #d02cb6 !important}
+	.navbarBottom {color: white !important;}
+
+
+.cls { clear: both;}
+
+    #PusrchaseNow{
+        display: block;
+        left: 7px;
+        opacity: 0;
+        margin-top: 115px;
+        margin-left: -37px;
+        position: absolute;
+        top: 0;
+        -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+    }    
+    #PusrchaseNow:hover{
+        opacity: 1;
+    }
+
+   #PusrchaseNow2{
+        display: block;
+        left: 7px;
+        opacity: 0;
+        margin-left: -23px;
+        margin-top: 115px;
+        position: absolute;
+        top: 0;
+            -webkit-transition: .2s all ease-in-out;
+        -moz-transition: .2s all ease-in-out;
+        -o-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+    }    
+    #PusrchaseNow2:hover{
+        opacity: 1;
+    }
+
+
+/**************************************************SOCIAL**********************************************************/
+
+    
+	#twitter {    
+        background-image: url(http://s019.radikal.ru/i601/1407/fd/0bbb6fa64b84.png); 
+        height: 44px;     
+        width: 225px;   
+        margin-right: -180px;
+         position: fixed;
+        z-index:10;
+        right: 0;
+        top: 41px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+    
+	#twitter:hover {   
+        margin-right: 0px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+      
+    }  
+ 
+    #contact{
+        background-image: url(http://s019.radikal.ru/i611/1407/01/a520d1a1499c.png);
+        height: 44px;     
+        width: 225px;
+        margin-right: -180px;
+         position: fixed;
+        z-index:10;
+        right: 0;
+        top: 91px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }    
+    #contact:hover{
+
+        margin-right: 0px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    } 
+
+   
+	#yt {    
+        background-image: url(http://s020.radikal.ru/i710/1407/2a/152ba1951920.png); 
+        height: 44px;     
+        width: 225px;   
+        margin-right: -180px;
+         position: fixed;
+        z-index:10;
+        right: 0;
+        top: 141px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+    
+	#yt:hover {   
+        margin-right: 0px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }  
+
+	#soundcloud{    
+        background-image: url(http://s020.radikal.ru/i713/1407/be/e286135d3232.png);
+        height: 44px;     
+        width: 225px;   
+        margin-right: -180px;
+          position: fixed;
+        z-index:10;
+        right: 0;
+        top: 191px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+    
+	#soundcloud:hover {
+        margin-right: 0px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+
+	#designl{    
+        background-image: url(http://s020.radikal.ru/i714/1407/4f/35b7146663d3.png);
+        height: 44px;     
+        width: 225px;   
+        margin-right: -180px;
+         position: fixed;
+        z-index:10;
+        right: 0;
+        top: 241px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+    
+	#designl:hover {
+        margin-right: 0px;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }
+
+   
+    .news {
+        color: #FFFFFF;
+        left: 50%;
+        font-size: 12px;
+        height: 75px !important;
+        margin-left: -494px;
+        margin-top: 1216px;
+        opacity: 0.7;
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        width: 992px;
+        z-index: 30;
+        -webkit-transition: .4s all ease-in-out;
+        -moz-transition: .4s all ease-in-out;
+        -o-transition: .4s all ease-in-out;
+        transition: .4s all ease-in-out;
+    }  
+
+    .news marquee{
+        height: 75px !important;    
+        text-align: center;
+    }  
+    
+    .news:hover {
+        opacity: 1;
+         -webkit-transition: .4s all ease-in-out;
+        -moz-transition: .4s all ease-in-out;
+        -o-transition: .4s all ease-in-out;
+        transition: .4s all ease-in-out;       
+    }       
+
+/*  main containers  */
+	.mainTable {background-color: transparent; border: 0px;  width: 1022px; margin-left: auto; margin-right: auto;}
+	.mainContent {background-color: transparent; width: 1022px; margin-left: auto; margin-right: auto;}
+	.sideAd {width:300px; height:260px; margin:3px 2px 15px 10px; float:right; text-align:center; overflow:visible;}
+	.sideAdSky {width:160px; height:610px; margin:3px 0px 15px 0px; float:right; text-align:center; overflow:visible; border-left:#999999 solid 1px;}
+
+/*  left navigation  */
+	.navigation {background:inherit; width:1022px; height: 1500px; float:left; overflow:hidden; margin:-50px -50px -20px 0px; display:block; z-index:30;}
+		.navigation a:link, .navigation a:visited {color:inherit;}
+		.navigation a:hover {color:inherit;}
+	.navigationDivider {height:6px; margin-bottom:6px;}
+
+/*  general elements  */
+	.headline {background:transparent; color:transparent; font-size:1px; font-weight:bold;  border-top:#333333 solid 1px; padding:3px 0px 3px 6px; text-align:right; margin-left: 300px; display: none;}
+	.headlineBig {font-size:22px; font-weight:normal;}
+	.headlineSuppl {float:right; margin:10px 5px 0px 0px; color:#transparent; font-size:1px; font-weight:normal;} /* for text/links on the right side of main headline (e.g. song count on main page) */
+		.headlineSuppl a:link, .headlineSuppl a:visited {color:#transparent; text-decoration:none;}
+		.headlineSuppl a:hover {color:transparent; text-decoration:underline;}
+	.pageturner {text-align:right; padding:10px; font-size:13px; font-weight:normal; color: #D7D7D7; background:transparent; border: 0;
+            -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;
+    }  /* pages menu (previous, next..), e.g. on music page, message board */
+		.pageturner .nonactive {color:#999999;}
+		.pageturner a:hover {color: white !important; text-decoration:underline;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;}
+		.pageturner a:link, .pageturner a:visited {color: #A4A4A4; text-decoration:none;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        transition: .3s all ease-in-out;}
+	.listedPicsBox {background:white; color:black; width:114px; height:160px; overflow:hidden; padding:2px 1px 4px 1px; margin:0px 4px 10px 4px; border:solid #cccccc 1px; float:left; font-size:11px; text-align:center;}
+		.listedPics {width:110px; height:125px; background-position: center center; background-repeat: no-repeat; margin:2px 0px 4px 0px; overflow:hidden}
+	.breaker {height:1px; line-height:1px; clear:both}
+
+/*  general color and font assets */
+	.color_supplemental {color:silver;} 	/* used e.g. for song pages comments count */
+	.alternateBG0 {background:#ffffff;}		/* used as background colors for comments */
+	.alternateBG1 {background:#f0f0f0;}		/* alternate color */
+
+/*  main page (the default entry page) */
+	.mainContent .contHeadline	{clear:left; font-family:Tahoma,Trebuchet MS,Verdana,Arial; font-size:14px; color:#E3E3E3; padding:12px 0px 2px 20px;}
+	.mainContent .contText {clear:left; font-size:13px; padding-left:15px;}
+	.mainContent .contInterview {clear:left; font-size:13px; padding-left:35px;}
+	.mainContent .newsBox {clear:both; margin:0px 20px 20px 20px; padding:20px; background:#ECECEC; border:#cccccc solid 2px;}
+	
+	/*  main page: video box (different from video page)   */
+	.videoBox_mainPage {background:#F5F5F5; color:#333333; padding:5px; margin:0px 100px 20px 100px;}
+		.videoBox_mainPage .video {padding:5px; margin-bottom:10px;}
+		.videoBox_mainPage .title {color:#333333; font-size:15px; text-align:center; margin-bottom:3px;}
+		.videoBox_mainPage .shareLinks {float:right; padding:2px; border-bottom:#CCCCCC dashed 1px;}
+		.videoBox_mainPage .labels {color:#999999; width:100px; padding-right:20px; text-align:right; float:left;}
+		.videoBox_mainPage .info {padding-left:120px;}
+		.videoBox_mainPage a:link, .videoBox_mainPage a:visited {color:blue; text-decoration:none; font-size:11px; font-weight:normal;}
+		.videoBox_mainPage a:hover {color:red; text-decoration:underline;}
+
+	/*  main page: upcoming shows  */
+	.liveshowsBox {width:300px; background:#006699; color:#FFFFFF; margin:15px 2px 15px 10px; float:right; clear:right;}
+		.liveshowsItems {padding:4px 0px 0px 0px; font-size:11px; clear:both;}
+		.liveshowsBox a:link, .liveshowsBox a:visited {color:white; text-decoration:none;}
+		.liveshowsBox a:hover {color:#FFD900; text-decoration:underline; cursor:pointer;}
+	
+	/*  main page: standard song box on artist page (only this song box or the embedded player is used. Never both together)  */
+	.playerBox {float:left; clear:left; padding-left:20px; margin:200px 0px 3px 0px;}
+		.playerBox .playerHead {text-align:right; background:#F6F6F6; color:#006699; font-size:12px; padding:5px 10px 5px 3px; border-top:solid 1px #ECECEC; border-bottom:solid 1px #999999;}
+			.playerBox .playerHead a:link,.playerBox .playerHead a:visited {color:blue; text-decoration:underline;}
+			.playerBox .playerHead a:hover {color:red; text-decoration:underline;}
+		.playerBox .songBox {width:330px; padding:3px 0px 0px 1px; overflow:auto; background:white url(http://www.soundclick.com/images/themes/gradientBGwhite.jpg) repeat-x; border-bottom:solid 1px #ECECEC;}
+		.playerBox .songBox .singleSong {font-size:11px; border-bottom:dashed 1px #CECEFF; padding:1px;}
+		.playerBox .songBox .singleSong:hover {background:#999999; cursor:pointer;}
+		
+
+	/*  main page: tabbed content headers (fans,stations) */
+	.tabbedCont_header li a:link, .tabbedCont_header li a:visited {background:#ffffff; color:gray; text-decoration:none; margin:0px 20px 0px 0px; padding:3px 6px 3px 6px; border:#C0C0C0 solid 1px; border-bottom:none;}
+		.tabbedCont_header li a:hover {background:#ECECEC; color:#006699;}
+		.tabbedCont_header li.selected a:link, .tabbedCont_header li.selected a:visited {background:#ECECEC; color:#006699; border:black solid 1px; font-weight:bold; border-bottom:#ECECEC solid 1px;}
+	
+	/*  main page: fans, stations (tabbed content)  */
+	.fansBox {padding:30px 20px 20px 20px; clear:both;}
+			.fansBox a:link, .fansBox a:visited {color:blue; text-decoration:none;}
+			.fansBox a:hover {color:red; text-decoration:underline;}
+			.fansBox .listedPicsBox, .fansBox .stationItem {background:white;}
+			.fansBox .listedPicsBox:hover, .fansBox .stationItem:hover {background:#ECECEC;}
+		.fancount {text-align:right; padding:3px 5px 3px 5px; margin-bottom:8px; font-size:11px; font-weight:normal; color:#999999; background:#ECECEC; border-bottom:#CECEFF dashed 1px; border-top:#333333 solid 1px; }
+		.fansBox_content {background:white;}
+		.fansBoxLastLine {clear:both; text-align:right; padding:3px 5px 3px 6px; margin:8px 0px 8px 0px; font-size:11px; font-weight:normal; color:#999999; background:#ECECEC; border-bottom:#666666 solid 1px; border-top:#CCCCCC dashed 1px;}
+		.stationItem {clear:both; color:black; border-bottom:#CCCCCC dashed 1px; padding:0px 1px 0px 1px;}
+		.stationPicBox {float:left;}
+			.stationPics {width:70px; height:70px; background-position:center center; background-repeat: no-repeat; margin:0px 0px 1px 0px; overflow:hidden}
+		.stationButtonsBox {float:left; padding:2px 15px 0px 5px; height:60px;}
+		.stationsText {height:70px; overflow:hidden;}
+		.stationlin&#107; a:link, .stationlin&#107; a:visited {color:black; font-size:13px; text-decoration:none;}
+			.stationlin&#107; a:hover {color:red; text-decoration:underline;}
+
+/*  music page  */
+.songsBox {
+ border-bottom:#d7d7d7;dashed 0px;
+
+ float:left;
+ padding-bottom:2px;
+ margin-bottom:40px;
+}
+/*http://imageshack.com/a/img560/2474/9t2p.png*/
+.songsBox {
+        overflow:hidden;
+        background: url(http://s019.radikal.ru/i620/1407/2e/44e30030618f.png);
+	background-repeat: no-repeat;
+	background-position:63px 0px;
+
+-webkit-transition: .5s all ease-in-out;-moz-transition: .5s all ease-in-out;
+-o-transition: .5s all ease-in-out;transition: .5s all ease-in-out;
+}
+.songsBox .topSong:hover {color:#ffff; float:left; text-align:left; font-size:13px;font-weight:bold;right:20px;}
+
+.songsBox a:hover {text-decoration:underline; color:#000000;-webkit-transition: .9s all ease-in-out;-moz-transition: .9s all ease-in-out;
+-o-transition: .9s all ease-in-out;transition: .9s all ease-in-out;}
+
+
+a.songtitle:link, a.songtitle:visited {color:#A4A4A4; text-decoration:none; font-size:13px; font-weight:bold;-webkit-transition: .9s all ease-in-out;-moz-transition: .9s all ease-in-out;
+-o-transition: .9s all ease-in-out;transition: .9s all ease-in-out;}
+a.songtitle:hover {color: white; margin-left:10px;-webkit-transition: .9s all ease-in-out;-moz-transition: .9s all ease-in-out;
+-o-transition: .9s all ease-in-out;transition: .9s all ease-in-out; }
+
+.songsBox:hover {
+        overflow:hidden;
+}
+.songsBox a:link, .songsBox a:visited {
+color: #838383;
+ 
+}
+.songsBox a:hover {
+ text-decoration:underline;
+  color: #000000;
+}
+a.songtitle:link, a.songtitle:visited {margin-left:0px;
+ color:#A4A4A4
+ text-decoration:none;
+ font-size:13px;
+ font-weight:bold;
+}
+a.songtitle:hover {
+margin-left:25px;
+ color: #000000;
+ text-decoration:underline;
+}
+	.songsBox .actionlinks {font-size:12px;}  /* the links for full song info, add to station, rate this song... */
+	.songsBox .topSong {float:left; text-align:left; color:#999999; font-size:11px;}
+
+/*  comments page  */
+	.commentsWelcome {margin:0px 20px 20px 20px; padding:20px; background:#111111; border: 0;}
+	.commentsBox { padding-top:5px; color:black; border-bottom:#CCCCCC dashed 1px;}
+		.commentsBox a:link, .commentsBox a:visited {color:blue; text-decoration:none;}
+		.commentsBox a:hover {color:red; text-decoration:underline;}
+	.commentsBox .songComment {border-bottom:#999999 dashed 1px; font-size:11px; padding:1px 3px; margin-bottom:5px;}
+	.commentsBox .postdate {text-align:right; margin:0px 5px 10px 0px; color:#C0C0C0; font-size:11px; font-weight:normal;}
+		.commentsBox .postdate a:link, .commentsBox .postdate a:visited {color:#8E8EFF; text-decoration:none;} /* for delete/edit links */
+		.commentsBox .postdate a:hover {color:red; text-decoration:underline;}
+	.commentsBox .comment {padding:0px 5px 0px 140px; font-size:12px;}
+	.commentsBox .bandSignature {border-top:silver dotted 1px; color:#AAAAAA; width:310px; margin-top:15px; line-height:20px;}
+	.commentsBox .ratingsBox {float:right; width:220px; border-left:#999999 dashed 1px; margin-bottom:10px;}
+			.ratingsBox .label {width:115px; text-align:right; float:left; padding-right:20px;} /* also used for .commentsPostBox .ratingsBox */
+	.commentsPostBox {padding:10px; margin: 10px 0px; background:#111111; border-top:black solid 2px; border-bottom:black solid 1px;}
+	.commentsPostBox .ratingsBox {background:#111111; clear:both; padding:7px 0px; margin:0px 250px 20px 30px;}
+
+
+
+/*  widgets page  */
+	.widgetMargin { padding:8px 0px 8px 35px;}
+	.widgetSpacer {width:100%; height:15px; clear:both;}
+	
+
+			
+.statsNumbers {
+z-index: 1212; 
+left: 50%; 
+position: absolute; 
+width:10px; 
+height: 10px;
+font-size: 10px;
+color:#ccc; 	
+text-shadow: 1px 1px 0px #000; top: 0;  margin-left: 304px; margin-top:68px;
+}
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">_qacct="p-23XeoURjgKGF2";quantserve();</script>
+<noscript>
+<a href="http://www.quantcast.com/p-23XeoURjgKGF2" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-23XeoURjgKGF2.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
+</noscript>
+<!-- End Quantcast tag -->
