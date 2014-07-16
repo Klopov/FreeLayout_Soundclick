@@ -42,5 +42,24 @@
     <None Include="Layout_3\Images\songbox.png" />
     <None Include="Layout_3\Images\tw1.png" />
     <None Include="Layout_3\Images\tw2.png" />
+    <None Include="Layout_5\css.txt" />
+    <None Include="Layout_5\Image\0bbb6fa64b84.png" />
+    <None Include="Layout_5\Image\152ba1951920.png" />
+    <None Include="Layout_5\Image\22d2727648b0.png" />
+    <None Include="Layout_5\Image\35b7146663d3.png" />
+    <None Include="Layout_5\Image\3cfbac87a952.png" />
+    <None Include="Layout_5\Image\40b7f643d708.png" />
+    <None Include="Layout_5\Image\44e30030618f.png" />
+    <None Include="Layout_5\Image\4d86710970d9.png" />
+    <None Include="Layout_5\Image\7abea2e6ea14.png" />
+    <None Include="Layout_5\Image\8bedebeff7ab.png" />
+    <None Include="Layout_5\Image\944807d37715.png" />
+    <None Include="Layout_5\Image\a520d1a1499c.png" />
+    <None Include="Layout_5\Image\animation.swf" />
+    <None Include="Layout_5\Image\b795b26c4a64.png" />
+    <None Include="Layout_5\Image\c76500813b2e.png" />
+    <None Include="Layout_5\Image\cde1879822a9.png" />
+    <None Include="Layout_5\Image\e286135d3232.png" />
+    <None Include="Layout_5\Image\ed768ed3e084.png" />
   </ItemGroup>
 </Project>
